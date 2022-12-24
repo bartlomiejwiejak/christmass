@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swięta</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+      .app {
+        text-align: center;
+        position: relative;
+        text-shadow: 3px -2px 20px rgba(66, 68, 90, 1);
+        color: #eee;
+      }
+      video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+      }
+      h1,
+      h2,
+      h3 {
+        opacity: 0;
+        transform: translateY(-75%);
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .anim-1 {
+        animation: 1s fadeIn forwards;
+      }
+      .anim-2 {
+        animation: 1s 1s fadeIn forwards;
+      }
+      .anim-3 {
+        animation: 1.5s 2s fadeIn forwards;
+      }
+      .anim-4 {
+        animation: 1.5s 3.5s fadeIn forwards;
+      }
+      .anim-5 {
+        animation: 1.5s 5s fadeIn forwards;
+      }
+
+      .anim-img-1 {
+        animation: 1.5s 2s fadeIn alternate;
+      }
+
+      .anim-img-2 {
+        animation: 1.5s 3.5s fadeIn alternate;
+      }
+
+      .anim-img-3 {
+        animation: 1.5s 5s fadeIn alternate;
+      }
+
+      .anim-img-4 {
+        animation: 3s 6.5s fadeIn forwards;
+      }
+
+      .img-container {
+        width: 200px;
+        height: 300px;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 32px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <video src="./Christmas - 99607.mp4" autoplay muted></video>
+    <div class="app">
+      <h1 class="anim-1">Wszystkiego najlepszego z okazji świąt!!!</h1>
+      <h2 class="anim-2">Dla:</h2>
+      <h3 class="anim-3">Wiki + Radek</h3>
+      <h3 class="anim-4">Gabi + Kacper M.</h3>
+      <h3 class="anim-5">Dominica + Kacper J.</h3>
+      <div class="img-container">
+        <img class="anim-img-1" src="./IMG_4529.jpg" />
+        <img class="anim-img-2" src="./IMG_4527.jpg" />
+        <img class="anim-img-3" src="./IMG_4528.jpg" />
+        <img class="anim-img-4" src="./heart-png-38780.png" />
+      </div>
+    </div>
+  </body>
+</html>
